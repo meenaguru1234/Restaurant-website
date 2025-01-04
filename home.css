@@ -1,0 +1,294 @@
+
+
+*{
+   font-family:'Nunito', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all.2s linear;
+}
+
+html{
+    /* font-size: 62,5%; */
+    overflow-x: hidden;
+}    
+
+header{
+    position: fixed;
+    padding: 1.5rem 7%;
+    background-color: green;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.24)0px 3px 8px;
+    
+}
+
+.logo h1{
+    color: rgb(31, 211, 142);
+    font-size: 25px;
+}
+.logo i{
+    display: block;
+    font-size: 25px;
+}
+
+/* .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0; 
+    height: 100vh;
+    width: 150px;
+    background-color: rgb(190, 225, 85);
+
+} */
+/* .fantacy h1{
+    align-items: justify;
+} */
+
+.navbar{
+   display: flex;
+   width:350px;
+   justify-content: space-around;
+}
+
+.navbar a{
+    font-size: 17px;
+    color: rgb(31, 211, 142);
+    padding: 0.5px;
+    margin-left: 1px;
+position: relative;
+           
+}
+
+.navbar a::after{
+   content: "";
+   background-color: rgb(31, 211, 142);
+   width: 0;
+   height: 1px;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   transition: 0.5s;
+           
+}
+
+.navbar a:hover:after{
+    width: 100%;
+            
+ }
+
+
+.navbar a:hover{
+    cursor: pointer;
+    color: rgb(240, 6, 6);
+}
+.icons{
+    font-size: 20px;
+
+}
+.icons div{
+    margin-left: 1px;
+    color:rgb(31, 211, 142);
+
+}
+.icons div:hover{
+    cursor: pointer;
+    color: white;
+}
+#menu-bar{
+    display: none;
+}
+
+.home{
+    padding: 4rem 7%;
+    background-image: linear-gradient(472.34deg, white 50.45%, green 50.45%);
+
+}
+.main-home{
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.home-left-content{
+    flex: 1 1 45rem;
+}
+.inner-home-content {
+    padding: 0 1rem;
+}
+.inner-home-content h3{
+    font-family: 'Dancing script', cursive;
+    font-size: 30px;
+    padding-bottom: 1rem;
+
+}
+
+.inner-home-content h1{
+font-weight: 600;
+    font-size: 40px;
+    padding-bottom: 1rem;
+
+}
+
+.inner-home-content h2{
+    font-weight: 600;
+        font-size: 35px;
+        padding-bottom: 2.5rem;
+    
+    }
+    .home-left-content a{
+    padding: 1.5rem 2rem;
+    background-color: rgb(0, 125, 13);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+
+/* .home-right-content{
+    flex: 1 1 45rem;
+    
+} */
+.home-right-content .home-image-content img{
+    padding: 2rem;
+    margin-left: 0px;
+   
+}
+
+.chose-food{
+    padding: 3rem 7%;
+}
+
+.chose-food h1{
+    font-size: 40px;
+    font-family: 'Dancing script', cursive;
+    color: green;
+    text-align: center;
+}
+
+.chose-food h1 span{
+    color: #ff8e28;
+}
+
+.main-chose{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.inner-chose{
+    flex: 1 1  300px;
+    text-align: center;
+}
+
+.inner-chose img{
+   width: 100%;
+   padding: 4rem;
+}
+
+.inner-chose-content{
+    padding: 0 4rem;
+}
+.inner-chose-content h2{
+    color: green;
+    font-size: 28px;
+    padding-bottom: 0.5rem;
+    /* text-align: center; */
+}
+.inner-chose-content p{
+    color: #333;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    /* text-align: center; */
+}
+
+.inner-chose-content a{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
+
+.inner-chose-content a:hover{
+    background-color: #333;
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+
+/* 
+@media (max-width:768px) {
+html{
+    font-size: 55%;
+}
+
+#menu-bar{
+    display: initial;
+}
+header{
+    padding: 2rem;
+}
+
+.navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: yellow;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0);
+}
+
+.navbar a{
+    color: white;
+    display: black;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #333;
+    border: 2px solid white;
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+.home-right-content .home-image-content img{
+    padding: 2rem;
+}
+
+.home-left-content{
+    padding-top: 5rem;
+}
+
+.inner-home-content{
+    padding: 0 0;
+    width: 100%;
+}
+
+} */
